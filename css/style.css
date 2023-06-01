@@ -1,41 +1,53 @@
 /* font lora link */
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-body {
+:root {
+  --theme-navy-blue : #251D41;
   background-color: #ffffff;
   font-family: 'Lora' !important;
 }
+.header_section{
+  height: 8vh;
+  background-color: var(--theme-navy-blue);
+}
+.ecommerce_logo{
+  height: calc(8vh - 1rem);
+  width: auto;
+}
+
 
 .container {
   background-color: #F5F5F5;
 
 }
 
-.lottery_ticket_banner {
-  height: 35rem;
+.lottery_ticket_banner{
+  height: 45rem;
 
 }
 
 .product-slider {
-  height: min-content;
+  height: 35rem;
   overflow: hidden;
 
 }
 
 .product-slider img {
-  /* min-height:min-content; */
-  height: 35rem;
-  /* width: 100%; */
-  object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
+  /* overflow: hidden; */
 
 }
-
+.carousel_info{
+  background: var(--theme-navy-blue);
+  height: 10rem;
+}
 .font_sm {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.438rem;
-  color: #242430;
+  color: #ffffff;
 
 }
 
@@ -76,14 +88,18 @@ input[type="number"] {
 
 .quiz_options {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-rows: repeat(4,1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: .5rem;
 
+}
+.quiz_option input:checked{
+  background-color: chartreuse;
 }
 
 .question_picture {
-  grid-column: 3;
-  grid-row: 1/span 2;
+  grid-column: 1;
+  grid-row: 1/span 4;
 }
 
 .ticket_amount {
@@ -122,6 +138,7 @@ input[type="number"] {
   }
   .quiz_options {
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1,1fr);
     gap: 1rem;
   
   }
