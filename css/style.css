@@ -3,8 +3,12 @@
 
 :root {
   --theme-navy-blue : #251D41;
-  background-color: #ffffff;
+  --theme-dark :#242430;
   font-family: 'Lora' !important;
+}
+body{
+  background-color: #F5F5F5;
+
 }
 .header_section{
   height: 8vh;
@@ -17,17 +21,28 @@
 
 
 .container {
-  background-color: #F5F5F5;
+  background-color: #ffffff;
 
 }
+.banner_heading{
+  background-color: var(--theme-dark);
+  height: 2.2rem;
+  font-size: .625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+.banner_heading p{
+  margin: 0!important;
+}
 .lottery_ticket_banner{
-  height: 45rem;
+  height: 40rem;
 
 }
 
 .product-slider {
-  height: 35rem;
+  height: 30rem;
   overflow: hidden;
 
 }
@@ -36,11 +51,12 @@
   max-height: 100%;
   max-width: 100%;
   /* overflow: hidden; */
+  object-fit: cover;
 
 }
 .carousel_info{
   background: var(--theme-navy-blue);
-  height: 10rem;
+  height: calc(10rem - 2.2rem);
 }
 .font_sm {
   font-style: normal;
@@ -54,36 +70,37 @@
 .ticket_section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: .5rem;
 }
 .d_none{
   visibility: hidden;
 }
-.btn_ticket_select {}
 
 .btn_ticket_select {
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
 
 }
 
 /*for Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
+/* input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none!important;
   margin: 0;
-}
+} */
 
 /* Works for Firefox */
-input[type="number"] {
+/* input[type="number"] {
   -moz-appearance: textfield!important;
   text-align: center;
 
-}
+} */
 .btn_ticket_select .btn {
   height: 100%;
   width: 100%;
-  padding: .675rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .quiz_options {
@@ -93,13 +110,16 @@ input[type="number"] {
   gap: .5rem;
 
 }
-.quiz_option input:checked{
-  background-color: chartreuse;
-}
+
 
 .question_picture {
   grid-column: 1;
   grid-row: 1/span 4;
+}
+.question_picture img{
+  height: 100%;
+  width: auto;
+  /* object-fit: cover; */
 }
 
 .ticket_amount {
