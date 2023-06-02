@@ -4,6 +4,8 @@
 :root {
   --theme-navy-blue : #251D41;
   --theme-dark :#242430;
+  --theme-dark2:#333333;
+  --theme_muted:#868686;
   font-family: 'Lora' !important;
 }
 body{
@@ -20,7 +22,7 @@ body{
 }
 
 
-.container {
+.row {
   background-color: #ffffff;
 
 }
@@ -138,8 +140,51 @@ input::-webkit-inner-spin-button {
   background: #ABABAB;
 
 }
+/* about section start*/
+.about_product_section{
+  padding: 0 5.25rem;
+
+}
+.product_heading{
+  border-bottom: 1px solid #D1D1D1;
+  padding-bottom: 0.625rem;
+}
+.product_description{
+}
+.product_details{
+
+}
+.dimension-values{
+  font-size: 0.813rem;
+}
+.dimension-info{
+  font-size: .55rem;
+  color: var(--theme_muted);
+}
+.product_details_list{
+  color: var(--theme-dark2);
+  font-size: .813rem;
+  padding-left: 1rem;
+}
+.accordion-button:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+.accordion-button::after {
+  
+  margin-left: 1rem;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--theme-dark);
+  background-color: transparent;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+/* about section end */
 
 @media only screen and (max-width: 769px){
+  .lottery_ticket_banner {
+    height: auto;
+}
   .ticket_amount {
     width: 5rem;
     height: 5rem;
