@@ -1,3 +1,4 @@
+
 function enableContinueButton() {
 
   var continueButton = document.getElementById('firstStepBtnId');
@@ -99,3 +100,20 @@ function submitForm() {
   // Redirect to another page
   window.location.href = "anotherpage.html";
 }
+
+
+/* participate section */
+const participateContainer = [...document.querySelectorAll('.participate_container')];
+const prevButton = [...document.querySelectorAll('.prev_btn')];
+const nextButton = [...document.querySelectorAll('.next_btn')];
+
+participateContainer.forEach((item, i) => {
+  let containerDimension = item.getBoundingClientRect();
+  let containerWidth = containerDimension.width;
+  prevButton[i].addEventListener('click', () => {
+    item.scrollLeft -= containerWidth;
+  })
+  nextButton[i].addEventListener('click', () => {
+    item.scrollLeft += containerWidth;
+  })
+})
