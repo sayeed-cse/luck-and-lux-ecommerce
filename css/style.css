@@ -6,6 +6,7 @@
   --theme-dark :#242430;
   --theme-dark2:#333333;
   --theme_muted:#868686;
+  --theme-off-white: #F4F4F4;
   font-family: 'Lora' !important;
 }
 body{
@@ -40,10 +41,12 @@ body{
   margin: 0!important;
 }
 .lottery_ticket_banner{
-  height: 40rem;
+  /* height: 40rem; */
 
 }
-
+.compitition_left_section{
+  height: calc(40rem - 2.2rem);
+}
 .product-slider {
   height: 30rem;
   overflow: hidden;
@@ -58,8 +61,8 @@ body{
 
 }
 .carousel_info{
-  background: var(--theme-navy-blue);
-  height: calc(10rem - 2.2rem);
+  border: 2px solid #19226C;
+  height: calc(8rem - 2.2rem);
 }
 .font_sm {
   font-style: normal;
@@ -73,6 +76,7 @@ body{
 .ticket_section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  min-height: 8rem;
 }
 .d_none{
   visibility: hidden;
@@ -105,7 +109,10 @@ input::-webkit-inner-spin-button {
   align-items: center;
   
 }
-
+.price_centerArea{
+  background-color: var(--theme-off-white);
+  height: 100%;
+}
 .quiz_options {
   display: grid;
   grid-template-rows: repeat(4,1fr);
@@ -122,7 +129,8 @@ input::-webkit-inner-spin-button {
 .question_picture img{
   height: 100%;
   width: auto;
-  /* object-fit: cover; */
+  background-image: url('../images/lv.png');
+  object-fit: cover;
 }
 
 .ticket_amount {
