@@ -52,7 +52,7 @@
             <!-- form step 1 start-->
 
             <form id="form_step_1" class="row h-100" onsubmit="return false;">
-              
+
               <div class="col-8 d-flex flex-column justify-content-between mt-5">
 
                 <div class="text-light p-3" style="background-color:var(--theme-navy-blue);">
@@ -114,9 +114,9 @@
                 </div>
                 <div class="bottom-0">
                   <p class="py-2 text-center text-lg-start border-2 border-top border-bottom mb-0"><strong
-                    class="h6 fw-bold">
-                    Draw-date:
-                  </strong><span> 30th December 2025</span></p>
+                      class="h6 fw-bold">
+                      Draw-date:
+                    </strong><span> 30th December 2025</span></p>
                 </div>
               </div>
               <div class="col-4 d-flex flex-column justify-content-between mt-5">
@@ -126,14 +126,15 @@
                     <p>&#8356; <span>1,499.00</span></p>
                   </div>
                   <div class="d-lg-flex flex-column justify-content-lg-end align-items-lg-end">
-  
-  
-                    <p class="mt-3 mb-0">&#8356; <span class="ticket_unit_price" id="ticket_unit_id">45.00</span> Per ticket
+
+
+                    <p class="mt-3 mb-0">&#8356; <span class="ticket_unit_price" id="ticket_unit_id">45.00</span> Per
+                      ticket
                     </p>
                     <p class="fs-5 mb-0">&#8356; <span>90.00</span> Total Price</p>
                   </div>
                 </div>
-                
+
                 <div class="my-3 my-lg-0 me-lg-0 pe-lg-0 text-end">
                   <button type="submit" name="continueButton"
                     class="btn btn-outline-dark border-2 text-center py-2 rounded-0 w-100" onclick="showStep2()"
@@ -141,22 +142,23 @@
                 </div>
               </div>
 
-              
+
             </form>
             <!-- form step 1 End-->
 
 
             <!-- form step2 Start-->
             <form class="d-none row h-100" id="form_step_2" action="" method="post">
-              <div class="col-12 col-lg-8 d-lg-flex flex-column justify-content-lg-around">
+              <div class="col-12 col-lg-8 d-lg-flex flex-column justify-content-lg-between mt-3">
                 <div class="text-light p-3" style="background-color:var(--theme-navy-blue);">
                   <p class="h4">What is the name of the brand in the image below?
                   </p>
                   <p class="fs-6 mb-0">Just answer a simple question to to let us know that you are</p>
-                  <p id="modal" class="d_none text-start fs-6 text-danger">Please choose a correct answer.</p>
                 </div>
                 <!-- quiz start -->
                 <div class="quiz_options">
+                  <p id="modal" class="d_none text-start fs-6 text-danger modal_alert">Please choose a correct answer.
+                  </p>
                   <div class="quiz_option">
                     <label for="option1" class="btn btn-outline-dark border-2 px-5 py-1 rounded-0 w-100 fs-6">
                       <input type="radio" class="visually-hidden" name="continueButton" id="option1" value="brandName"
@@ -187,13 +189,18 @@
                     </label>
                   </div>
                   <div class="question_picture shadow-sm">
-                    <img src="images/Louis_Vuitton_LV_logo 1.png" alt="" class="img-thumbnail question_pic">
+                    <img src="images/Louis_Vuitton_LV_logo 1.png" alt="" class="question_pic">
                   </div>
                 </div>
-                <!-- quiz start -->
-
+                <!-- quiz End -->
+                <div class="bottom-0">
+                  <p class="py-2 text-center text-lg-start border-2 border-top border-bottom mb-0"><strong
+                      class="h6 fw-bold">
+                      Draw-date:
+                    </strong><span> 30th December 2025</span></p>
+                </div>
               </div>
-              <div class="col-12 col-lg-4 text-end pt-3 d-flex flex-column justify-content-lg-around">
+              <div class="col-12 col-lg-4 text-end pt-3 d-flex flex-column justify-content-lg-between mt-3">
                 <div>
                   <h5>Market Price</h5>
                   <p>&#8356; <span>1,499.00</span></p>
@@ -212,17 +219,12 @@
                 </div>
 
               </div>
-              <div class="col-12 px-0">
-                <p class=" border-2 border-top border-bottom text-center text-lg-start py-2 mx-3"><strong
-                    class="h6 fw-bold">
-                    Draw-date:
-                  </strong><span> 30th December 2025</span></p>
-              </div>
+
 
             </form>
             <!-- form step2 End-->
-            
-           
+
+
 
           </div>
           <!-- Compitition section End -->
