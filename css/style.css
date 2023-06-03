@@ -85,25 +85,30 @@ body{
 .btn_ticket_select {
   height: 4rem;
   width: 4rem;
+  font-size: 1.6rem;
+  border : .125rem solid var(--theme-navy-blue);
+  border-radius: 50%;
+
 
 }
 
 /*for Chrome, Safari, Edge, Opera */
-/* input::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none!important;
   margin: 0;
-} */
+}
 
-/* Works for Firefox */
-/* input[type="number"] {
+/*Works for Firefox */
+input[type="number"] {
   -moz-appearance: textfield!important;
   text-align: center;
 
-} */
-.btn_ticket_select .btn {
+}
+.btn_ticket_select .btn{
   height: 100%;
   width: 100%;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,19 +143,19 @@ input::-webkit-inner-spin-button {
 }
 
 .ticket_amount {
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 1rem;
-  border: 1px solid #D9D9D9;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  border: .125rem solid var(--theme-dark);
 }
 
 .arrow_up,
 .arrow_down {
-  width: 1rem;
-  height: 1rem;
-  font-size: .5rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  font-size: .8rem;
   color: #ffffff;
-  background: #ABABAB;
+  background: var(--theme-navy-blue);
 
 }
 /* about section start*/
@@ -328,16 +333,46 @@ fieldset:nth-of-type(4){
   
   }
   .quiz_options {
+    text-align: center;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1,1fr);
     gap: 1rem;
   
   }
-  .question_picture {
-    width: 60%;
-    margin: auto;
-    order: 1;
-    grid-column: 1;
+  .modal_alert{
     grid-row: 1;
+    grid-column: 1;
+    order: 1;
   }
+  
+  .question_picture {
+    width: 90%;
+    margin: auto;
+    order: 2;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .about_product_section{
+  padding: 0 1rem;
+  }
+  /* perticipate slider start */
+.product_area{
+  padding: .25rem;
+}
+.participate_container{
+  gap: .1rem;
+  padding: 0vw;
+
+}
+.support_area{
+  padding:1rem 2rem;
+}
+.prev_btn,.next_btn{
+  /* visibility: hidden; */
+  display: none;
+}
+.footer_links{
+  flex-direction: column;
+  gap: .5rem;  
+}
 }
