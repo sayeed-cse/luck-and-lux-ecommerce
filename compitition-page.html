@@ -121,22 +121,22 @@
               </div>
               <div class="col-12 col-lg-4 d-flex flex-column justify-content-between mt-5">
                 <div class="d-flex flex-lg-column justify-content-between px-2 py-3 price_centerArea mb-3">
-                  <div class="text-end pt-3">
+                  <div class="text-start text-lg-end pt-3">
                     <h5>Market Price</h5>
                     <p>&#8356; <span>1,499.00</span></p>
                   </div>
-                  <div class="d-lg-flex flex-column justify-content-lg-end align-items-lg-end">
+                  <div class="d-lg-flex flex-column justify-content-lg-end align-items-lg-end text-end text-lg-center">
 
 
                     <p class="fw-normal mt-3 mb-0">&#8356; <span class="ticket_unit_price" id="ticket_unit_id">45.00</span> Per ticket
                     </p>
-                    <p class="fs-5 mb-0">&#8356; <span>90.00</span> Total Price</p>
+                    <p class="fs-5 mb-0 d_none">&#8356; <span class="">90.00</span> Total Price</p>
                   </div>
                 </div>
 
-                <div class="my-3 my-lg-0 me-lg-0 pe-lg-0 text-end">
+                <div class="my-3 my-lg-0 me-lg-0 pe-lg-0 text-center text-lg-end">
                   <button type="submit" name="continueButton"
-                    class="btn btn-outline-dark border-2 text-center py-2 rounded-0 w-100" onclick="showStep2()"
+                    class="btn btn-outline-dark border-2 text-center py-2 rounded-0 px-5" onclick="showStep2()"
                     id="firstStepBtnId" disabled>Continue</button>
                 </div>
               </div>
@@ -201,8 +201,8 @@
                 </div>
               </div>
               <div class="col-12 col-lg-4 d-flex flex-column justify-content-between mt-5">
-                <div class="d-flex flex-lg-column justify-content-between px-2 py-3 price_centerArea mb-3">
-                  <div class="text-end pt-3">
+                <div class="d-flex flex-lg-column justify-content-between align-content-center px-2 py-3 price_centerArea mb-3">
+                  <div class="text-start text-lg-end pt-3">
                     <h5>Market Price</h5>
                     <p>&#8356; <span>1,499.00</span></p>
                   </div>
@@ -210,7 +210,7 @@
                     <span class="fs-5 m-auto me-2">Tickets </span>
                     <div class="d-flex justify-content-center justify-content-lg-end align-content-center my-3 my-lg-0 mx-lg-0">
                       <input type="number"
-                        class="border border-1 rounded-circle btn_ticket_select"
+                        class="btn_ticket_select"
                         id="selected_ticket_id" name="selected_ticket" value="">
                       <p class="ms-2 my-auto d-flex flex-column gap-1">
                         <span class="d-flex justify-content-center align-items-center border border-1 rounded-circle arrow_up"><img src="images/arrou-up.png" alt=""></span>
@@ -225,10 +225,10 @@
                 
                 
                 <div class="text-muted text-center text-lg-end justify-content-between">
-                  <p class="text-end mb-0">&#8356; <span>45.00</span>Per ticket</p>
+                  <p class="text-center text-lg-end mb-0">&#8356; <span>45.00</span>Per ticket</p>
                   <p class="fs-5 mb-0">&#8356; <span class="total_price" id="total_price_id">90.00</span> Total Price</p>
                   <button type="submit" name="continueButtonQuiz"
-                    class="btn btn-outline-dark border-2 px-3 px-lg-5 my-0 rounded-0" id="submit_button"
+                    class="btn btn-outline-dark border-2 px-3 px-lg-5 my-0 rounded-0 " id="submit_button"
                     disabled>Continue</button>
                 </div>
 
@@ -263,7 +263,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel_info p-3 d-flex flex-column justify-content-center mb-3">
+            <div class="carousel_info p-3 d-flex flex-column justify-content-center text-end text-lg-center mb-3">
               <!-- <p class="font_sm">Win The</p> -->
               <h4 class="fs-6 fw-normal mb-0">Louis Vuitton</h4>
               <p class="fs-5 mb-0">Marceau Monogram</p>
@@ -324,7 +324,7 @@
         <!-- About Product section End -->
       </div>
       <!-- product slider start -->
-      <div class="container-fluid mx-1 my-5">
+      <div class="container-fluid mx-0 mx-lg-1 my-1 my-lg-5">
         <div class="product_area">
           <button class="prev_btn"><img src="images/prev.png" alt=""></button>
           <button class="next_btn"><img src="images/next.png" alt=""></button>
@@ -332,11 +332,11 @@
             <!-- card start -->
             <div class="col-12 col-lg-4 card perticipate_card pe-0">
               <div class="row g-0">
-                <div class="col-7 my-auto ps-0 ps-lg-2 fs-4">
-                  <div class="card-body text-black">
-                    <p class="card-title fs-5">Ulysse Nardin</p>
+                <div class="col-7 my-auto ps-0 ps-lg-2">
+                  <div class="card-body text-black p-2 p-lg-3">
+                    <p class="card-title">Ulysse Nardin</p>
                     <p class="card-text mb-0">Blast dual time</p>
-                    <a href="#" class="btn btn-outline-dark border-1 px-3 px-lg-5 py-2 rounded-0 mt-3 mt-lg-5">Participate Now</a>
+                    <a href="#" class="btn btn-outline-dark border-1 px-3 px-lg-5 py-1 py-lg-2 rounded-0 mt-3 mt-lg-5">Participate Now</a>
                   </div>
                 </div>
                 <div class="col-5 ">
@@ -349,11 +349,11 @@
             <!-- card start -->
             <div class="col-12 col-lg-4 card perticipate_card pe-0">
               <div class="row g-0">
-                <div class="col-7 my-auto ps-0 ps-lg-2 fs-4">
-                  <div class="card-body text-black">
-                    <p class="card-title fs-5">Ulysse Nardin</p>
+                <div class="col-7 my-auto ps-0 ps-lg-2">
+                  <div class="card-body text-black p-2 p-lg-3">
+                    <p class="card-title">Ulysse Nardin</p>
                     <p class="card-text mb-0">Blast dual time</p>
-                    <a href="#" class="btn btn-outline-dark border-1 px-3 px-lg-5 py-2 rounded-0 mt-3 mt-lg-5">Participate Now</a>
+                    <a href="#" class="btn btn-outline-dark border-1 px-3 px-lg-5 py-1 py-lg-2 rounded-0 mt-3 mt-lg-5">Participate Now</a>
                   </div>
                 </div>
                 <div class="col-5">
@@ -366,11 +366,11 @@
             <!-- card start -->
             <div class="col-12 col-lg-4 card perticipate_card pe-0">
               <div class="row g-0">
-                <div class="col-7 my-auto ps-0 ps-lg-2 fs-4">
-                  <div class="card-body text-black">
-                    <p class="card-title fs-5">Ulysse Nardin</p>
+                <div class="col-7 my-auto ps-0 ps-lg-2">
+                  <div class="card-body text-black p-2 p-lg-3">
+                    <p class="card-title">Ulysse Nardin</p>
                     <p class="card-text mb-0">Blast dual time</p>
-                    <a href="#" class="btn btn-outline-dark border-1 px-3 px-lg-5 py-2 rounded-0 mt-3 mt-lg-5">Participate Now</a>
+                    <a href="#" class="btn btn-outline-dark border-1 px-3 px-lg-5 py-1 py-lg-2 rounded-0 mt-3 mt-lg-5">Participate Now</a>
                   </div>
                 </div>
                 <div class="col-5">
@@ -383,11 +383,11 @@
             <!-- card start -->
             <div class="col-12 col-lg-4 card perticipate_card pe-0">
               <div class="row g-0">
-                <div class="col-7 my-auto ps-0 ps-lg-2 fs-4">
-                  <div class="card-body text-black">
-                    <p class="card-title fs-5">Ulysse Nardin</p>
+                <div class="col-7 my-auto ps-0 ps-lg-2">
+                  <div class="card-body text-black p-2 p-lg-3">
+                    <p class="card-title">Ulysse Nardin</p>
                     <p class="card-text mb-0">Blast dual time</p>
-                    <a href="#" class="btn btn-outline-dark border-1 px-3 px-lg-5 py-2 rounded-0 mt-3 mt-lg-5">Participate Now</a>
+                    <a href="#" class="btn btn-outline-dark border-1 px-3 px-lg-5 py-1 py-lg-2 rounded-0 mt-3 mt-lg-5">Participate Now</a>
                   </div>
                 </div>
                 <div class="col-5">
@@ -414,7 +414,7 @@
           </div>
         </div>
         <div class="row mx-2 mx-lg-5">
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4 text-center">
             <p>For news, exclusive offers and<br> beautiful watches, follow us on <br>Instagram</p>
           </div>
           <div class="col-12 col-lg-8">
