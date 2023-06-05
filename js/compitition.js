@@ -1,7 +1,8 @@
+let perTicketUnitId = document.getElementById('ticket_unit_id');
+let perTicketPrice = parseFloat(perTicketUnitId.innerHTML);
 
 
-
-  function enableContinueButton() {
+function enableContinueButton() {
   let priceStepOneAreaId = document.getElementById('priceStepOneAreaId');
   priceStepOneAreaId.classList.remove('d_none');
 
@@ -11,9 +12,15 @@
   var radioButtons = document.getElementsByName('ticket');
   for (var i = 0; i < radioButtons.length; i++) {
     if (radioButtons[i].checked) {
+      let buttonValue = radioButtons[i].value;
+      let total_priceCalcOne = buttonValue * perTicketPrice;
+      let totalPriceStepOne = document.getElementById('totalPriceStepOne');
+      totalPriceStepOne.innerHTML = total_priceCalcOne;
+
       continueButton.disabled = false;
       continueButton.classList.remove('btn-outline-dark');
       continueButton.classList.add('btn-dark');
+
       break;
     }
   }
@@ -34,15 +41,14 @@ function showStep2() {
 
   let ticket_option = document.getElementsByClassName('btn_ticket_select');
   let total_ticket_option = ticket_option.length;
-  let perTicketUnitId = document.getElementById('ticket_unit_id');
-  let perTicketPrice = parseFloat(perTicketUnitId.innerHTML);
+
 
   // console.log(total_ticket_option,inputValue);
   let total_priceCalc = inputValue * perTicketPrice;
-  
+
   let total_price_id = document.getElementById('total_price_id');
   total_price_id.innerHTML = total_priceCalc;
-  
+
 
   const arrow_up = document.querySelector(".arrow_up"),
     arrow_down = document.querySelector(".arrow_down"),
@@ -50,7 +56,7 @@ function showStep2() {
   let temp = inputNumber.value;
   arrow_up.addEventListener("click", () => {
     temp++;
-    temp = (temp < total_ticket_option) ? 0  + temp : temp;
+    temp = (temp < total_ticket_option) ? 0 + temp : temp;
     inputNumber.value = temp;
     total_price_id.innerHTML = perTicketPrice * temp;
   });
@@ -84,8 +90,9 @@ function enableSubmitButton() {
 function checkAnswer(selectedOption) {
   var submitButton = document.getElementById('submit_button');
   var modal = document.getElementById('modal');
+  let setectedOption = selectedOption.id;
 
-  if (selectedOption.id === 'option3') {
+  if (setectedOption === 'option3') {
     submitButton.disabled = false;
     submitButton.classList.remove('btn-outline-dark');
     submitButton.classList.add('btn-dark');
@@ -95,6 +102,8 @@ function checkAnswer(selectedOption) {
     modal.classList.remove('d_none');
   }
 }
+
+
 
 function closeModal() {
   var modal = document.getElementById('modal');
