@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compitition-Page</title>
+  <title>Competition-Page</title>
 </head>
 
 <body>
@@ -125,12 +125,13 @@
                     <h5>Market Price</h5>
                     <p>&#8356; <span>1,499.00</span></p>
                   </div>
-                  <div class="d-lg-flex flex-column justify-content-lg-end align-items-lg-end text-end text-lg-center">
+                  <div class="d-lg-flex flex-column justify-content-lg-end align-items-lg-end text-end text-lg-center" >
 
 
                     <p class="fw-normal mt-3 mb-0">&#8356; <span class="ticket_unit_price" id="ticket_unit_id">45.00</span> Per ticket
                     </p>
-                    <p class="fs-5 mb-0 d_none">&#8356; <span class="">90.00</span> Total Price</p>
+                    <p class="fs-5 mb-0 d_none" id="priceStepOneAreaId">&#8356; <span id="totalPriceStepOne" ></span> Total Price</p>
+                    
                   </div>
                 </div>
 
@@ -201,12 +202,12 @@
                 </div>
               </div>
               <div class="col-12 col-lg-4 d-flex flex-column justify-content-between mt-5">
-                <div class="d-flex flex-lg-column justify-content-between align-content-center px-2 py-3 price_centerArea mb-3">
+                <div class="d-flex flex-lg-column justify-content-between justify-content-lg-start align-content-center px-2 py-3 price_centerArea mb-3">
                   <div class="text-start text-lg-end pt-3">
                     <h5>Market Price</h5>
                     <p>&#8356; <span>1,499.00</span></p>
                   </div>
-                  <div class="my-lg-0 mx-lg-0 text-end">
+                  <div class="my-lg-5 mx-lg-0 text-end">
                     <span class="fs-5 m-auto me-2">Tickets </span>
                     <div class="d-flex justify-content-center justify-content-lg-end align-content-center my-3 my-lg-0 mx-lg-0">
                       <input type="number"
@@ -464,9 +465,10 @@
     </footer>
 
     </div>
-    <script src="js/script.js">
-    </script>
+    <!-- <script src="js/script.js">
+    </script> -->
   </body>
+  <script src="js/compitition.js"></script>
 
   </html>
 </body>
