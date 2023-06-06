@@ -91,7 +91,8 @@ function checkAnswer(selectedOption) {
   var submitButton = document.getElementById('submit_button');
   var modal = document.getElementById('modal');
   let setectedOption = selectedOption.id;
-
+  
+  
   if (setectedOption === 'option3') {
     submitButton.disabled = false;
     submitButton.classList.remove('btn-outline-dark');

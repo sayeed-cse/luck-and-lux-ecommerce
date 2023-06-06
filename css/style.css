@@ -333,7 +333,9 @@ fieldset:nth-of-type(4){
     font-size: 2rem;
     /* border: 1px solid #D9D9D9; */
   }
-  
+  .ticket_section {
+    justify-items: center;
+  }
   .arrow_up,
   .arrow_down {
     width: 1.5rem;
@@ -415,4 +417,118 @@ fieldset:nth-of-type(4){
   width: 1.5rem;
   /* padding: 0 rem; */
 }
+}
+@media only screen and (min-width: 769px) and (max-width:991px){
+  :root{
+
+    font-size: 100%;
+  }
+  .lottery_ticket_banner {
+    height: auto;
+}
+.compitition_left_section{
+  height: auto;
+}
+.ticket_section {
+  min-height: 14rem;
+  justify-items: center;
+}
+.btn_ticket_select{
+  height: 5rem;
+  width: 5rem;
+}
+  
+  .arrow_up,
+  .arrow_down {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: .5rem;
+    /* color: #ffffff;
+    background: #ABABAB; */
+  
+  }
+  .quiz_options {
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1,1fr);
+  
+  }
+  .modal_alert{
+    grid-row: 1;
+    grid-column: 1;
+    order: 1;
+  }
+  
+  
+  .question_picture {
+    width: 90%;
+    margin: auto;
+    order: 2;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .about_product_section{
+  padding: 0 .5rem;
+  text-align: justify;
+  }
+  .price_centerArea{
+    background-color: transparent;
+  }
+  /* perticipate slider start */
+.product_area{
+  padding: .25rem;
+}
+.product-slider {
+  height: 35rem;
+}
+.participate_container{
+  gap: .5rem;
+  padding: 0vw;
+
+}
+.perticipate_card{
+  max-width: 15rem;
+}
+.perticipate_card .card-title{
+  font-size: .5rem;
+}
+.perticipate_card .card-text{
+  font-size: .6rem;
+
+}
+.perticipate_card .btn{
+  font-size: .5rem;
+}
+.support_area{
+  padding:1rem 2rem;
+  text-align: center;
+}
+.prev_btn,.next_btn{
+  /* visibility: hidden; */
+  display: none;
+}
+.footer_links{
+  flex-direction: column;
+  gap: 0rem;  
+}
+.footer_pay_links a{
+  text-decoration: none;
+  padding: 0 .125rem;
+}
+.footer_pay_links img{
+  height: auto;
+  width: 1.5rem;
+}
+}
+@media only screen and (min-width: 992px) and (max-width:1200px){
+  :root{
+
+    font-size: 70%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1440px){
+  :root{
+
+    font-size: 85%;
+  }
 }
