@@ -134,7 +134,11 @@ body {
   font-size: 1.375rem;
 }
 /* Login End */
-
+/* about us start */
+.about-us-description{
+  text-align: justify;
+}
+/* about us end */
 .banner_heading {
   background-color: var(--theme-dark);
   height: 2.2rem;
