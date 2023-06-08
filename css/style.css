@@ -139,6 +139,12 @@ body {
   text-align: justify;
 }
 /* about us end */
+/* refer start */
+.refer_area{
+  background-color: var(--theme_muted2);
+  padding: 6rem;
+}
+/* refer End */
 .banner_heading {
   background-color: var(--theme-dark);
   height: 2.2rem;
@@ -588,6 +594,9 @@ fieldset:nth-of-type(4) {
     height: auto;
     width: 1.5rem;
     /* padding: 0 rem; */
+  }
+  .refer_area{
+    padding: 1rem;
   }
 }
 
